@@ -13,7 +13,7 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: docker://stain/jena:3.14.0
+  image: docker://stain/jena:master
   args:
     - riot
     - ${{ inputs.convert }}
