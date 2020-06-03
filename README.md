@@ -7,7 +7,7 @@ Use Docker Image from https://hub.docker.com/r/stain/jena
 ### Validate RDF
 
 ```yaml
-- uses: vemonet/jena-riot-action@master
+- uses: vemonet/jena-riot-action@v3.14
   with:
     input: my_file.ttl
 ```
@@ -15,7 +15,7 @@ Use Docker Image from https://hub.docker.com/r/stain/jena
 ### Convert RDF to RDF
 
 ```yaml
-- uses: vemonet/jena-riot-action@master
+- uses: vemonet/jena-riot-action@v3.14
   with:
     convert: --format=NQUADS
     input: my_file.ttl
