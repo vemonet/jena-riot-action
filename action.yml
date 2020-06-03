@@ -1,0 +1,20 @@
+name: 'Validate RDF with Jena'
+description: 'Run the Apache Jena riot tool to validate or convert RDF to RDF.'
+branding:
+  icon: 'check-square' 
+  color: 'blue'
+inputs:
+  convert:
+    description: 'use --validate to validate RDF or convert with --output=FORMAT'
+    required: false
+    default: '--validate'
+  input:
+    description: 'Input RDF file to validate/parse'
+    required: true
+runs:
+  using: 'docker'
+  image: docker://stain/jena:latest
+  args:
+    - riot
+    - ${{ inputs.convert }}
+    - ${{ inputs.input }}
