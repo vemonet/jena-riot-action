@@ -17,8 +17,8 @@ Use Docker Image from https://hub.docker.com/r/stain/jena
 ```yaml
 - uses: vemonet/jena-riot-action@v3.14
   with:
-    convert: --format=NQUADS
     input: my_file.ttl
+    convert: --output=NQUADS
 ```
 
 > Jena does not allow to output to file directly. Would need to rewrite entrypoint.
