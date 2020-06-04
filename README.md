@@ -12,6 +12,8 @@ Use Docker Image from https://hub.docker.com/r/stain/jena
     input: my_file.ttl
 ```
 
+>  If the RDF is not valid the job will fail and the error message displayed to standard output (workflow logs).
+
 ### Convert RDF to RDF
 
 ```yaml
